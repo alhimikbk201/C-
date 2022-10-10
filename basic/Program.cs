@@ -7,7 +7,7 @@ number1 = Console.ReadLine()!;
 
 int.TryParse(number1, out a);
 
-Console.Write("Введите первое число");
+Console.Write("Введите второе число");
 
 number2 = Console.ReadLine()!;
 
