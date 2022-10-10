@@ -1,20 +1,19 @@
-﻿int a, b;
+﻿int a;
 
-string number1, number2;
+string number1;
 Console.Write("Введите первое число");
 
 number1 = Console.ReadLine()!;
 
 int.TryParse(number1, out a);
 
-Console.Write("Введите второе число");
 
-number2 = Console.ReadLine()!;
 
-int.TryParse(number2, out b);
 
-if(a > b) {
-    Console.Write($"max {a}");
+
+
+if (a % 2 == 0) {
+    Console.Write($"{a} четное");
 } else {
-    Console.Write($"max {b}");
+    Console.Write($"{a} не четное");
 }
