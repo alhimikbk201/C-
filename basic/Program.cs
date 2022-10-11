@@ -1,20 +1,21 @@
-﻿int a, b;
+﻿void ThreeNumber(string _str) {
+    char [] _number;
+    _number = _str.ToCharArray();
 
-string number1, number2;
+    
+        if(_str.Length > 3) {
+           Console.Write(_number[2]);
+        } else {
+             Console.Write("Нет третьей цифры");
+            
+        }
+
+    
+}
+
+string number1;
 Console.Write("Введите первое число");
 
 number1 = Console.ReadLine()!;
 
-int.TryParse(number1, out a);
-
-Console.Write("Введите второе число");
-
-number2 = Console.ReadLine()!;
-
-int.TryParse(number2, out b);
-
-if(a > b) {
-    Console.Write($"max {a}");
-} else {
-    Console.Write($"max {b}");
-}
+ThreeNumber(number1);
