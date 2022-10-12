@@ -13,8 +13,10 @@ int [] inputDot() {
 int [] _A = {0, 0 , 0}; 
 Console.Write("Введите X");
 int.TryParse(Console.ReadLine()!, out _A[0]);
+
 Console.Write("Введите Y");
 int.TryParse(Console.ReadLine()!, out _A[1]); 
+
 Console.Write("Введите Z");
 int.TryParse(Console.ReadLine()!, out _A[2]); 
 
