@@ -1,21 +1,15 @@
-﻿void ThreeNumber(string _str) {
-    char [] _number;
-    _number = _str.ToCharArray();
+﻿void CubeNumber(int _a) {
 
     
-        if(_str.Length > 3) {
-           Console.Write(_number[2]);
-        } else {
-             Console.Write("Нет третьей цифры");
-            
-        }
 
     
 }
-
+int a;
 string number1;
 Console.Write("Введите первое число");
 
 number1 = Console.ReadLine()!;
 
-ThreeNumber(number1);
+a = 
+
+CubeNumber(a);
