@@ -1,10 +1,14 @@
-﻿int a;
+﻿void getArray() {
+    int [] _intArr = {0,0,0,0,0,0,0,0};
+    for(int i = 0; i < 8; i++) {
+        _intArr[i] = new Random().Next(0, 100);
+    }
 
-string number1;
-Console.Write("Введите число");
+    foreach(var item in _intArr) {
+        Console.Write($"{item} ");
 
-number1 = Console.ReadLine()!;
+    }
 
-int.TryParse(number1, out a);
+}
 
-Console.Write(a % 10);
+getArray();
