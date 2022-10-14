@@ -5,6 +5,10 @@ Console.Write("Введите число");
 
 number1 = Console.ReadLine()!;
 
-int.TryParse(number1, out a);
+ char [] symbol = number1.ToCharArray;
 
-Console.Write(a % 10);
+ for()
+
+//int.TryParse(number1, out a);
+
+
