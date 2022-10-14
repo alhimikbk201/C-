@@ -1,38 +1,30 @@
-﻿int a;
+﻿int MainPow(int _a, int _n) {
 
-string number1;
+    int _pow = 1;
+
+    for(int i = 0; i <= _n; i++) {
+
+        _pow *= _a;
+
+    }
+
+    return _pow;
+}
+
+
+int a, n;
+
+string number1, number2;
 Console.Write("Введите число");
 
 number1 = Console.ReadLine()!;
 
 int.TryParse(number1, out a);
 
-int i = 0;
-int j = 4;
-int c, v;
+Console.Write("Введите степень");
 
-a += 100000;
-while(i <= 2 ) {
-  
-    c = a / (int)Math.Pow(10, j) % 10;
-    v = a / (int)Math.Pow(10, i) % 10;
-    if(c != v ) {
-        Console.Write("Не полиндром  ");
-       
-       
-        break;
+number2 = Console.ReadLine()!;
 
-    } else {
-        
-        i++;
-        j--;
+int.TryParse(number1, out n);
 
-        if(i == 2) {
-            Console.Write("Полиндром");
-}
-    }
-
-   
-
-}
-
+Console.Write(MainPow(a, n));
