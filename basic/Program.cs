@@ -1,14 +1,18 @@
-﻿int a;
+﻿int sum = 0;
 
 string number1;
 Console.Write("Введите число");
 
 number1 = Console.ReadLine()!;
 
- char [] symbol = number1.ToCharArray;
+ char [] symbol = number1.ToCharArray();
 
- for()
+ for(int i = 0; i < symbol.Length; i++) {
+    
+    sum += (int)Char.GetNumericValue(symbol[i]);
+    
+ }
 
-//int.TryParse(number1, out a);
+Console.Write(sum);
 
 
