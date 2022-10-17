@@ -13,9 +13,9 @@ arr = getArr(a);
 
 printArr(arr);
 
-int resolt = getMaxMeaningFromArr(arr);
+int resolt = getMinMeaningFromArr(arr);
 
-Console.Write($"Max number {resolt}");
+Console.Write($"Min {resolt}");
 
 
 int getMaxMeaningFromArr(int[] _arr) {
@@ -33,6 +33,23 @@ int getMaxMeaningFromArr(int[] _arr) {
 }
 
 
+
+
+
+
+int getMinMeaningFromArr(int[] _arr) {
+   int meaning = _arr[0];
+
+   for(int i = 1; i < _arr.Length; i++) {
+    if(meaning > _arr[i]) {
+
+        meaning = _arr[i];
+        }
+
+    }
+
+   return meaning;
+}
 
 int [] getArr(int _a) {
     
