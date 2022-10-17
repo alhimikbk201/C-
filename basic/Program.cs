@@ -19,7 +19,12 @@ Console.Write($"Min {min}\n");
 
 double max = getMaxMeaningFromArr(arr);
 
-Console.Write($"Max {max}");
+Console.Write($"Max {max}\n");
+
+double resolt = max - min;
+
+Console.Write($"Разница между максимальным и минимальным значением массива равна {resolt}");
+
 
 double getMaxMeaningFromArr(double[] _arr) {
    double meaning = _arr[0];
