@@ -11,7 +11,9 @@ int [] arr = {};
 
 arr = getArr(a);
 
+printArr(arr);
 
+getSumNotevenPositionArr(arr);
 
 int [] getArr(int _a) {
     
@@ -33,8 +35,16 @@ void getSumNotevenPositionArr(int []_arr) {
             sum += _arr[i];
         }
 
-        Console.Write($"Сумма значений нечетный позиций равна {sum}");
+        
         
     }
 
+    Console.Write($"Сумма значений нечетный позиций равна {sum}");
+
 }
+
+void printArr(int[] _arr) {
+    for(int i = 0; i < _arr.Length; i++) {
+        Console.Write($"{_arr[i]} ");
+    }
+} 
