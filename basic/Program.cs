@@ -7,19 +7,22 @@ number1 = Console.ReadLine()!;
 
 int.TryParse(number1, out a);
 
-int [] arr = {};
+double [] arr = {};
 
 arr = getArr(a);
 
 printArr(arr);
 
-int resolt = getMinMeaningFromArr(arr);
+double min = getMinMeaningFromArr(arr);
 
-Console.Write($"Min {resolt}");
+Console.Write($"Min {min}\n");
 
+double max = getMaxMeaningFromArr(arr);
 
-int getMaxMeaningFromArr(int[] _arr) {
-   int meaning = _arr[0];
+Console.Write($"Max {max}");
+
+double getMaxMeaningFromArr(double[] _arr) {
+   double meaning = _arr[0];
 
    for(int i = 1; i < _arr.Length; i++) {
     if(meaning < _arr[i]) {
@@ -37,8 +40,8 @@ int getMaxMeaningFromArr(int[] _arr) {
 
 
 
-int getMinMeaningFromArr(int[] _arr) {
-   int meaning = _arr[0];
+double getMinMeaningFromArr(double[] _arr) {
+   double meaning = _arr[0];
 
    for(int i = 1; i < _arr.Length; i++) {
     if(meaning > _arr[i]) {
@@ -51,18 +54,18 @@ int getMinMeaningFromArr(int[] _arr) {
    return meaning;
 }
 
-int [] getArr(int _a) {
+double [] getArr(int _a) {
     
-    int [] _arr = new int [_a];
+    double [] _arr = new double [_a];
     
     for(int i = 0; i < _a; i++) {
-        _arr[i] = new Random().Next(1, 100);
+        _arr[i] = new Random().NextDouble() * 1000;
         }
 
         return _arr;
 } 
 
-void printArr(int[] _arr) {
+void printArr(double[] _arr) {
     for(int i = 0; i < _arr.Length; i++) {
         Console.Write($"{_arr[i]} ");
     }
